@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8c08f;
+    padding-top: 10rem;
+}
+
+h1 {
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.player {
+    border: 2px solid #333;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.player:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dice {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    animation: shake 0.5s ease-in-out;
+}
+
+.dot {
+    width: 30%;
+    height: 30%;
+    background-color: #ff0000;
+    border-radius: 50%;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    75% {
+        transform: rotate(-5deg);
+    }
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:disabled {
+    background-color: #000000;
+    cursor: not-allowed;
+}
+
+button:hover {
+    background-color: #000000;
+}

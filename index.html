@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Player Dice Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Two-Player Dice Game</h1>
+    <div class="container">
+        <div class="player" id="player1">
+            <h2>Player 1</h2>
+            <div class="dice" id="dice1">
+                <span class="dot" id="dot1"></span>
+                <span class="dot" id="dot2"></span>
+                <span class="dot" id="dot3"></span>
+                <span class="dot" id="dot4"></span>
+                <span class="dot" id="dot5"></span>
+                <span class="dot" id="dot6"></span>
+            </div>
+            <p>Score: <span id="score1">0</span></p>
+        </div>
+        <div class="player" id="player2">
+            <h2>Player 2</h2>
+            <div class="dice" id="dice2">
+                <span class="dot" id="dot7"></span>
+                <span class="dot" id="dot8"></span>
+                <span class="dot" id="dot9"></span>
+                <span class="dot" id="dot10"></span>
+                <span class="dot" id="dot11"></span>
+                <span class="dot" id="dot12"></span>
+            </div>
+            <p>Score: <span id="score2">0</span></p>
+        </div>
+    </div>
+    <button id="rollButton" onclick="rollDice()" disabled>Roll Dice</button>
+    <button id="resetButton" onclick="resetGame()">Reset Game</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
